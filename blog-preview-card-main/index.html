@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      background-color: F4D04E;
+    }
+    /* html {
+      font-size: 62.5%;
+    } */
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .heading {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 1.6rem;
+    }
+    body {
+      background-color: #F4D04E;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    p {
+      font-weight: 900;
+    }
+
+    section {
+      background-color: white;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      border-radius: .5rem;
+      margin-top: 2rem;
+      width: 50vh;
+      gap: 1rem;
+      box-shadow: 10px 10px;
+    }
+
+    .hero-image {
+      border-radius: .5rem;;
+    }
+    .avatar {
+      height: 24px;
+      width: 24px;
+    }
+
+    .text-footer {
+      display: flex;
+      gap:5px;
+      align-items: center;
+    }
+    .button {
+      background-color: #F4D04E;
+      display: flex;
+      max-width: 5rem;
+      border-radius: 3px;
+      justify-content: center;
+      align-items: center;
+      height: 1.5rem;
+    }
+    .text-content {
+      color: gray;
+      font-weight: 400;
+    }
+
+    .sub-heading {
+      font-weight: 900;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- <header class="heading">
+    <h1> Learning </h1>
+
+    <h2> Published 21 Dec 2023 </h2>
+
+    <h3>HTML & CSS foundations</h3>
+
+    <h4>These languages are the backbone of every website, defining structure, content, and presentation.
+
+    Greg Hooper</h4>
+    
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Mohammed Shoukath Ali</a>.
+    </div>
+  </header> -->
+  <section>
+    <img class="hero-image" src="./assets/images/illustration-article.svg" alt="hero image" />
+
+    <p class="button">Learning</p>
+    <p>Published 21 Dec 2023</p>
+    <p class="sub-heading">HTML and CSS foundation</p>
+    <P class="text-content">These languages are the backbone of every website, defining structure, content, and presentation.</P>
+
+    <div class="text-footer">
+      <img class="avatar" src="assets/images/image-avatar.webp" alt="author image" />
+      <p>Greg Hooper</p>
+    </div>
+
+  </section>
+</body>
+</html>
