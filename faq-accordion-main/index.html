@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | FAQ accordion</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+     *{
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+     }
+
+     body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 3rem;
+      margin: auto 20%;
+      gap: 3rem;
+      position: relative;
+     }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    .accordian-container {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      row-gap: 2rem;
+     
+
+    }
+    .qanda {
+      display: flex;
+      flex-direction: column;
+      gap:2rem;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .bottom {
+      background-color: gray;
+    }
+    .accordian {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%);
+      background-color: white;
+      border-radius: .5rem;
+      padding: 1rem;
+      box-shadow: 2px 2px 2px 2px gray;
+    }
+
+    .faq  {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+    .accordian-container img {
+   
+    }
+
+    .question {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top">
+    <img src="./assets/images/background-pattern-desktop.svg" alt="">
+  </div>
+  <div class="bottom"></div>
+
+  <div class="accordian" >
+    <div class="faq">
+      <img src="./assets/images/icon-star.svg" alt="faq icon" />
+      <h1>FAQs</h1>
+    </div>
+    <div class="accordian-container">
+    
+
+      <div class="qanda">
+        <p class="question">What is Frontend Mentor, and how will it help me?</p>
+        <p>Frontend Mentor offers realistic coding challenges to help developers improve their 
+          frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for 
+          all levels and ideal for portfolio building.</p>
+      </div>
+
+      <img src="./assets/images/icon-minus.svg" alt="Collapse" />
+
+      
+
+      <div class="qanda">
+        <p class="question">Is Frontend Mentor free?</p>
+        <p class="hidden">Yes, Frontend Mentor offers both free and premium coding challenges, with the free 
+          option providing access to a range of projects suitable for all skill levels.</p>
+      </div>
+      <img src="./assets/images/icon-plus.svg" alt="Expand" />
+
+    
+
+      <div class="qanda">
+        <p class="question">Can I use Frontend Mentor projects in my portfolio?</p>
+        <p class="hidden">Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent
+          way to showcase your skills to potential employers!</p>
+        </div>
+      <img src="./assets/images/icon-plus.svg" alt="Expand" />
+
+      
+
+      <div class="qanda">
+        <p class="question">How can I get help if I'm stuck on a Frontend Mentor challenge?</p>
+        <p class="hidden">The best place to get help is inside Frontend Mentor's Discord community. There's a help 
+          channel where you can ask questions and seek support from other community members.</p>
+      </div>
+      <img src="./assets/images/icon-plus.svg" alt="Expand" />
+
+    </div>
+  </div>
+
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Mohammed Shoukath Ali</a>.
+  </div>
+</body>
+</html>
